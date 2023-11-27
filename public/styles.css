@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* header section */
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #52734D;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+.logo-title{
+    cursor: pointer;
+    margin-right: 600px;
+    margin-left: 10%;
+    color: #52734D;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+}
+
+.nav-link{
+    list-style: none;
+}
+
+.nav-link li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-link li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-hvr:hover{
+    color: lightgray;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: #52734D;
+    color: white;
+}
+
+/* home style section */
+.home-header{
+    padding: 30px 10%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 35%;
+    background-color: #52734D;
+  }
+  
+.grid-item {
+    padding: 40px;
+    font-size: 50px;
+    text-align: left
+}
+
+.header-img{
+    width: 150%;
+    margin-left: 20%;
+}
+
+/* Feature Section */
+#body-web{
+    padding: 30px 10%;
+    margin-top: 60px;
+}
+
+.feature-typo{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 1rem;;
+}
+
+.feature-typo:hover{
+    color: #52734D;
+}
+
+.feature-paragraph{
+    font-size: 1.2rem;
+}
+
+.grid-container-feature{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    background-color: white;
+    margin: 30px;
+    margin-left: 30px;
+}
+  
+.grid-item-feature{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.img-feature{
+    width: 60px;
+}
+
+/* Menu Section */
+#menu-web{
+    padding: 30px 10%;
+}
+
+.menu-title{
+    text-align: center;
+    margin-bottom:20px;
+    margin-top: 50px;
+    font-size: 400%;
+    font-family: none;
+    color: #000;
+}
+
+.menu-title:hover{
+    color: #52734D;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 10px 10px;
+}
+  
+
+.row {margin: 10px -5px;}
+  
+ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+
+@media screen and (max-width: 1000px) {
+    .column {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    text-align: center;
+    background-color: #f1f1f1;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+  
+.card:hover {
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.4);
+}
+
+/* Testimonial */
+#testi-web{
+    padding: 30px 10%;
+}
+
+.testi-title{
+    text-align: center;
+    margin-bottom:80px;
+    margin-top: 50px;
+    font-size: 400%;
+    font-family: none;
+    color: #000;
+}
+
+.testi-title:hover{
+    color: #52734D;
+}
+
+#slideshow {
+    overflow: hidden;
+    height: 250px;
+    width: 484px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+   
+
+.slide {
+    float: left;
+    height: 250px;
+    width: 484px;
+}
+   
+
+.slide-wrapper {
+    width: calc(484px * 4);
+   
+
+    animation: slide 10s ease infinite;
+}
+   
+.slide:nth-child(1) {
+    text-align: center;
+}
+   
+.slide:nth-child(2) {
+    text-align: center;
+}
+   
+.slide:nth-child(3) {
+    text-align: center;
+}
+   
+.slide:nth-child(4) {
+    text-align: center;
+}
+   
+@keyframes slide {
+     
+    20% {
+      margin-left: 0px;
+    }
+   
+    40% {
+      margin-left: calc(-484px * 1);
+    }
+   
+    60% {
+      margin-left: calc(-484px * 2);
+    }
+   
+    80% {
+      margin-left: calc(-484px * 3);
+    }
+}
+/* 
+Footer Section */
+.footer{
+    border-width: 20px;
+    padding: 0 40% 2%;
+    padding-top: -70%;
+    text-align: center;
+}
+
+.footer:hover{
+    color: #000;
+}
